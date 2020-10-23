@@ -30,7 +30,8 @@ class CervezaRoja inherits CervezaNegra {
 
 class Jarra {
 	var property capacidadEnLitros = 0
-	const marca 
+	const property marca
+	const property carpaServida 
 	
 	method contenidoDeAlcohol() {
 		return marca.graduacionPorLitro() * capacidadEnLitros
