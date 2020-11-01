@@ -4,11 +4,9 @@ import carpas.*
 class Persona {
 	const peso
 	var property jarrasQueCompro = []
-	const musicaTradicional
-	const nivelDeAguante
-	const property paisOrigen
-	
-	method musicaTradicional() = musicaTradicional
+	var property musicaTradicional
+	var property  nivelDeAguante
+	var property paisOrigen
 	
 	method estaEbrie() {
 		return jarrasQueCompro.sum({j=>j.contenidoDeAlcohol()}) * peso > nivelDeAguante

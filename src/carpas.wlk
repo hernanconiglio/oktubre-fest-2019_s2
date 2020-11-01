@@ -2,9 +2,9 @@ import marcas.*
 import personas.*
 
 class Carpa {
-	const property limiteGente = 100
-	const property tieneBanda
-	const property marcaCerveza
+	var property limiteGente
+	var property tieneBanda
+	var property marcaCerveza
 	var property personas = []
 
 	method dejaIngresar(persona) {
