@@ -68,7 +68,10 @@ class Persona {
 		return jarrasQueCompro.map( { j=>j.carpaServida() } ).asSet()
 	}
 	
+	
 }
+
+/* PAISES */
 
 object alemania { 
 	

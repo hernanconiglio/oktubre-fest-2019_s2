@@ -5,7 +5,7 @@ class Carpa {
 	var property limiteGente
 	var property tieneBanda
 	var property marcaCerveza
-	var property personas = []
+	var property personas = #{}
 
 	method dejaIngresar(persona) {
 		return limiteGente >= personas.size() + 1
@@ -33,6 +33,10 @@ class Carpa {
 	
 	method esHomogenea() {
 		return personas.map( { p=>p.paisOrigen() } ).asSet().size() == 1
+	}
+	
+	method asistentesNoServidos() {
+		return personas.filter( { p=> not p.carpasDondeBebio().contains(self) } )
 	}
 	
 
